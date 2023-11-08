@@ -1,0 +1,18 @@
+program ::= declaration statement_list
+statement ::= (declaration | assignment_statement | if_statement | 
+                while_statement | return_statement | loop_statement | iostmt)
+
+statement_list ::= statement | statement ";" statement_list
+compound_statement ::= ":" statement_list
+
+iostmt ::= "read,("simple_type"),"IDENTIFIER | "write,("simple_type"),"IDENTIFIER
+
+simple_type ::= "int" | "string" | "char"
+array_declaration ::= IDENTIFIER":"["simple_type"]"
+declaration ::= IDENTIFIER":"simple_type | array_declaration
+
+assignment_statement ::= IDENTIFIER",=,"expression
+return statement ::= "return,expression"
+
+condition ::= expression","relation","expression
+relation ::= "<" | "<=" | "=" | "!=" | ">=" | ">"
