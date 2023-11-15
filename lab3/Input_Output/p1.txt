@@ -1,0 +1,10 @@
+a,b,c:int,int,int;
+
+read(int),a
+read(int),b
+read(int),c
+
+maxx:int;
+maxx,=,max(int,int),a,b;
+maxx,=,max(int,int),c,maxx;
+print(int),maxx;

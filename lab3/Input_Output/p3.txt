@@ -1,0 +1,10 @@
+numbers:[int]
+maxx,n:int,int
+maxx,=,-999
+
+read(int),n
+
+loop,i,1,n:
+	maxx,=,max(int,int),-,numbers,get(int),i,-,maxx;
+
+print(int),maxx;

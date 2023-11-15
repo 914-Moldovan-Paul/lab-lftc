@@ -1,0 +1,11 @@
+a,b:int,int
+
+read,$a
+read(int),b
+
+gcd(int,int),int:
+	if,-,a,-=,0,-:
+		return,b;
+	return,gcd(int,int),b,%,a,a;
+
+print,gcd(int,int),a,b;
